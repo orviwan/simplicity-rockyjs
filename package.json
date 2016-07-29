@@ -1,0 +1,23 @@
+{
+  "name": "Simplicity-Rocky",
+  "author": "MakeAwesomeHappen",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Simplicity Rocky",
+    "uuid": "594e3e49-f3db-4521-9d66-4478ff46eecd",
+    "sdkVersion": "3",
+    "projectType": "rocky",
+    "enableMultiJS": true,
+    "watchapp": {
+      "watchface": true
+    },
+    "targetPlatforms": [
+        "basalt",
+        "chalk",
+        "diorite"
+    ]
+  }
+}
