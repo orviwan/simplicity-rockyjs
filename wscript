@@ -3,8 +3,6 @@
 #
 # Feel free to customize this to your needs.
 #
-import os.path
-
 top = '.'
 out = 'build'
 
@@ -25,8 +23,8 @@ def configure(ctx):
 
 def build(ctx):
     ctx.load('pebble_sdk')
-    ctx.pbl_bundle(js=ctx.path.ant_glob(['src/js/pebblekit/**/*.js',
-                                         'src/js/pebblekit/**/*.json',
-                                         'src/js/common/**/*.js']),
-                   js_entry_file='src/js/pebblekit/app.js',
+    ctx.pbl_bundle(js=ctx.path.ant_glob(['src/pkjs/**/*.js',
+                                         'src/pkjs/**/*.json',
+                                         'src/common/**/*.js']),
+                   js_entry_file='src/pkjs/index.js',
                    bin_type='rocky')
